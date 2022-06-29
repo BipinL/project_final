@@ -3,6 +3,7 @@
 use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\CompanyController;
 use App\Http\Controllers\Backend\PostController;
+use App\Http\Controllers\Frontend\PageController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -17,6 +18,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', [PageController::class, 'home']);
 
 Auth::routes();
 
