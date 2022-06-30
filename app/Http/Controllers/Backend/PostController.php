@@ -50,7 +50,7 @@ class PostController extends Controller
         }
         $post->save();
 
-        $post->categories()->attach($request->category_id);
+        // $post->categories()->attach($request->category_id);
         return redirect('/post');
     }
 

@@ -14,11 +14,11 @@
                         @csrf
 
                         <div class="form-group">
-                            <label for="category_name">Category name</label>
-                            <input type="text" name="category_name" id="category_name" class="form-control"
-                                placeholder="Enter Category" value=" {{}} ">
+                            <label for="category_id">Category name</label>
+                            <input type="text" name="category_id" id="category_id" class="form-control"
+                                placeholder="Enter Category" value=" {{ $category->category_id }} ">
                         </div>
-                        <div class="form-group row">
+                        {{-- <div class="form-group row">
                             <div class="col-md-9">
                                 <div class="form-check mr-sm-2">
                                     <input type="checkbox" class="form-check-input" name="status" id="status"
@@ -28,8 +28,8 @@
                                 </div>
 
                             </div>
-                        </div>
-                        <button type="submit" class="btn btn-info">Add Category</button>
+                        </div> --}}
+                        <button type="submit" class="btn btn-info">Update Category</button>
                     </form>
                 </div>
             </div>

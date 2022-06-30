@@ -1,17 +1,11 @@
 @extends('frontend.app')
 @section('content')
     <div>
-        <div class="container">
-            <img src="https://www.exoclick.com/wp-content/uploads/2021/05/HQ-Multi-format-editable.gif" class="img-fluid"
-                alt="">
-        </div>
-    </div>
-    <h1 class="d-flex justify-content-between">main news</h1>
-    <div>
+        <h1 class="text-centre">News Of The Day</h1>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <img src="https://www.finance-monthly.com/Finance-Monthly/wp-content/uploads/2018/07/WorldCupImage-750x400.jpg"
+                    <img src="https://assets-global.website-files.com/61e750573ddfc7028ee7b089/628f9e71e77560d770638468_UFC_DOJO_BLOG_HEADER.png"
                         class="img-fluid" alt="">
                 </div>
             </div>

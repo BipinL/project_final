@@ -14,6 +14,12 @@
 
     {{-- for icons --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <style>
+        .logo {
+            height: 200px;
+
+        }
+    </style>
 
 </head>
 
@@ -22,14 +28,14 @@
     <div class="bg-success">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 text-light">
                     thursday,26,2023
                 </div>
-                <div class="col-md-6">
-                    <i class="bi bi-facebook"></i>
-                    <i class="bi bi-twitter"></i>
-                    <i class="bi bi-instagram"></i>
-                    <i class="bi bi-linkedin"></i>
+                <div class="col-md-6 d-flex-end">
+                    <i class="bi bi-facebook text-light"></i>
+                    <i class="bi bi-twitter text-light"></i>
+                    <i class="bi bi-instagram text-light"></i>
+                    <i class="bi bi-linkedin text-light"></i>
 
                 </div>
             </div>
@@ -39,16 +45,18 @@
 
     {{-- start logo and top ads --}}
     <div>
-        <div class="ads container py-2">
+        <div class="topbarad container py-2">
 
             <div class="row">
                 {{-- for logo --}}
-                <div class="col-md-4">
-                    <img src="https://s3.amazonaws.com/images.seroundtable.com/google-sunset-1529582903.jpg"
-                        class="img-fluid" alt="">
+                <div class="col-lg-3">
+                    <div class="container">
+                        <img src="https://s3.amazonaws.com/images.seroundtable.com/google-sunset-1529582903.jpg"
+                            class="img-fluid" alt="">
+                    </div>
                 </div>
                 {{-- for ads --}}
-                <div class="col-md-8">
+                <div class="col-md-6">
                     <img src="https://visme.co/blog/wp-content/uploads/how-to-create-winnig-visual-for-your-fb-ad-header-2.gif"
                         class="img-fluid" alt="">
                 </div>
@@ -62,33 +70,36 @@
 
 
     {{-- start navbar --}}
-    <div class="">
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid bg-success d-flex-justify-content-between">
-                <a class="navbar-brand" href="#">NewsPortal</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">main news</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">sports</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">politics</a>
-                        </li>
+    <div>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid bg-success">
+                    <a class="navbar-brand text-light" href="#">NewsPortal</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse d-flex justify-content-centre" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-light" aria-current="page" href="#">main news</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-light" aria-current="page" href="#">sports</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-light" aria-current="page" href="#">politics</a>
+                            </li>
 
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
+
     </div>
     {{-- end nav bar --}}
 
@@ -96,15 +107,9 @@
 
 
     {{-- start footer --}}
-    <div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
+    <div class="bg-primary">
+        <div class="container bg-primary">
 
-                </div>
-                <div class="col-md-4"></div>
-                <div class="col-md-4"></div>
-            </div>
         </div>
     </div>
     {{-- end footer --}}

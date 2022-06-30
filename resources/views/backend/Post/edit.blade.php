@@ -19,7 +19,7 @@
                                 placeholder="Enter Title" value=" $post->title ">
                         </div>
 
-                        <div class="form-group">
+                        {{-- <div class="form-group">
                             <label for="category_name"> Category <span class="text-danger">*</span></label>
 
                             <select name="category_id[]" id="category_id" class="form-select form-control select2" multiple>
@@ -28,7 +28,7 @@
                                 @endforeach
                             </select>
 
-                        </div>
+                        </div> --}}
 
                         <div class="form-group">
                             <label for="image">Image<span class="text-danger">*</span></label>
