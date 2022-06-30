@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>news portal</title>
+    {{-- link css --}}
+    <link rel="stylesheet" href="../../css/app.css">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -37,33 +39,54 @@
 
     {{-- start logo and top ads --}}
     <div>
-        <div class="container">
+        <div class="ads container py-2">
+
             <div class="row">
                 {{-- for logo --}}
                 <div class="col-md-4">
-
+                    <img src="https://s3.amazonaws.com/images.seroundtable.com/google-sunset-1529582903.jpg"
+                        class="img-fluid" alt="">
                 </div>
                 {{-- for ads --}}
                 <div class="col-md-8">
-
+                    <img src="https://visme.co/blog/wp-content/uploads/how-to-create-winnig-visual-for-your-fb-ad-header-2.gif"
+                        class="img-fluid" alt="">
                 </div>
 
 
             </div>
+
         </div>
     </div>
     {{-- end logo and top ads --}}
 
 
     {{-- start navbar --}}
-    <div>
+    <div class="">
         <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
+            <div class="container-fluid bg-success d-flex-justify-content-between">
+                <a class="navbar-brand" href="#">NewsPortal</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">main news</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">sports</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">politics</a>
+                        </li>
 
+                    </ul>
+                </div>
             </div>
         </nav>
     </div>
