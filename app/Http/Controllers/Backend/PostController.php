@@ -50,7 +50,7 @@ class PostController extends Controller
         }
         $post->save();
 
-        // $post->categories()->attach($request->category_id);
+        $post->categories()->attach($request->category_id);
         return redirect('/post');
     }
 
@@ -74,7 +74,7 @@ class PostController extends Controller
     public function edit($id)
     {
         $post = Post::find($id);
-        return view('backend.Post.edit');
+        return view('backend.Post.edit', compact('post'));
     }
 
     /**

@@ -14,6 +14,7 @@
 
     {{-- for icons --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <style>
         .logo {
             height: 200px;
@@ -70,48 +71,14 @@
 
 
     {{-- start navbar --}}
-    <div>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg bg-light">
-                <div class="container-fluid bg-success">
-                    <a class="navbar-brand text-light" href="#">NewsPortal</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse d-flex justify-content-centre" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active text-light" aria-current="page" href="#">main news</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active text-light" aria-current="page" href="#">sports</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active text-light" aria-current="page" href="#">politics</a>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-
-    </div>
+    @include('frontend.components.navbar')
     {{-- end nav bar --}}
 
     @yield('content')
 
 
     {{-- start footer --}}
-    <div class="bg-primary">
-        <div class="container bg-primary">
-
-        </div>
-    </div>
+    @include('frontend.components.footer')
     {{-- end footer --}}
 
     <!-- JavaScript Bundle with Popper -->

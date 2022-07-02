@@ -18,17 +18,18 @@
                             <input type="text" name="category_id" id="category_id" class="form-control"
                                 placeholder="Enter Category">
                         </div>
-                        <div class="form-group row">
+
+                        {{-- <div class="form-group row">
                             <div class="col-md-9">
-                                {{-- <div class="form-check mr-sm-2">
+                                <div class="form-check mr-sm-2">
                                     <input type="checkbox" class="form-check-input" name="status" id="status"
                                         value="1" />
                                     <label class="form-check-label" for="customControlAutosizing1">Mark as
                                         active</label>
-                                </div> --}}
+                                </div>
 
                             </div>
-                        </div>
+                        </div> --}}
                         <button type="submit" class="btn btn-info">Add Category</button>
                     </form>
                 </div>

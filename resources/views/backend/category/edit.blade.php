@@ -6,13 +6,13 @@
             <div class="col-md-12">
                 <div class="card-header ">
                     <span class="fs-4 fw-bold">New Category</span>
-                    <a href="/category" class="float-end btn btn-info">Back</a>
+                    <a href="/category " class="float-end btn btn-info">Back</a>
                 </div>
                 <div class="card-body">
 
-                    <form action="/category" , method="post" enctype="multipart/form-data">
+                    <form action="/category/ {{ $category->id }}" , method="post" enctype="multipart/form-data">
                         @csrf
-
+                        @method('PUT')
                         <div class="form-group">
                             <label for="category_id">Category name</label>
                             <input type="text" name="category_id" id="category_id" class="form-control"

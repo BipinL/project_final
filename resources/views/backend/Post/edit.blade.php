@@ -10,13 +10,13 @@
                 </div>
                 <div class="card-body">
 
-                    <form action="/post" , method="post" enctype="multipart/form-data">
+                    <form action="/post/ {{ $post->id }} " , method="post" enctype="multipart/form-data">
                         @csrf
-
+                        @method('put')
                         <div class="form-group">
                             <label for="title">Title<span class="text-danger">*</span></label>
                             <input type="text" name="title" id="title" class="form-control"
-                                placeholder="Enter Title" value=" $post->title ">
+                                placeholder="Enter Title" value=" {{ $post->title }} ">
                         </div>
 
                         {{-- <div class="form-group">
@@ -33,15 +33,17 @@
                         <div class="form-group">
                             <label for="image">Image<span class="text-danger">*</span></label>
                             <input type="file" name="image" id="image" class="form-control"
-                                accept="images/jpeg, images/jpg, images/png" placeholder="Enter Title">
+                                accept="images/jpeg, images/jpg, images/png" placeholder="Enter Title"
+                                value=" {{ $post->image }} ">
                         </div>
 
                         <div class="form-group">
                             <label for="description">Description <span class="text-danger">*</span></label>
-                            <textarea name="description" id="description" rows="3"></textarea>
+                            <textarea name="description" id="description" rows="3" placeholder="Description"
+                                value=" {{ $post->description }} "></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-info">Save Post</button>
+                        <button type="submit" class="btn btn-info">Update Post</button>
                     </form>
                 </div>
             </div>
