@@ -36,9 +36,13 @@
                                 accept="images/jpeg, images/jpg, images/png" placeholder="Enter Title">
                         </div>
 
-                        <div class="form-group">
+                        {{-- <div class="form-group">
                             <label for="description">Description <span class="text-danger">*</span></label>
                             <textarea name="description" id="description" rows="3"></textarea>
+                        </div> --}}
+                        <div class="form-group">
+                            <label for="description">Description <span class="text-danger">*</span></label>
+                            <textarea id="description" class="form-control" name="description" rows="3"></textarea>
                         </div>
 
                         <button type="submit" class="btn btn-info">Save Post</button>
