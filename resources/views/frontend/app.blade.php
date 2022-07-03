@@ -20,6 +20,48 @@
             height: 200px;
 
         }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+
+        }
+
+        a:hover {
+            color: rgba(0, 128, 0, 0.39);
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .navbar {
+            background: limegreen;
+            padding: 3rem 2rem;
+            height: 0rem;
+            min-height: 12vh;
+        }
+
+        .navbar-expand-lg .navbar-nav .nav-link {
+            padding: 2rem 1.5rem;
+            font-size: 1.5rem;
+            position: relative;
+        }
+
+        .navbar-expand-lg .navbar-nav .nav-link:hover {
+            border-top: 4px solid rgba(0, 128, 0, 0.39);
+            ;
+
+        }
+
+        .navbar-expand-lg .navbar-nav .nav-link:active {
+            border-top: 4px solid rgba(0, 128, 0, 0.39);
+            ;
+            color: rgba(0, 128, 0, 0.39);
+            ;
+
+        }
     </style>
 
 </head>

@@ -39,8 +39,7 @@
 
                         <div class="form-group">
                             <label for="description">Description <span class="text-danger">*</span></label>
-                            <textarea name="description" id="description" rows="3" placeholder="Description"
-                                value=" {{ $post->description }} "></textarea>
+                            <textarea name="description" id="description" rows="3">{{ $post->description }}</textarea>
                         </div>
 
                         <button type="submit" class="btn btn-info">Update Post</button>

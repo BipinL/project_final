@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Backend\AdController;
 use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\CompanyController;
 use App\Http\Controllers\Backend\PostController;
@@ -27,3 +28,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::resource('company', CompanyController::class);
 Route::resource('post', PostController::class);
 Route::resource('category', CategoryController::class);
+Route::resource('ad', AdController::class);
