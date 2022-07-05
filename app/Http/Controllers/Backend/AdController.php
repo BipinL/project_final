@@ -39,9 +39,14 @@ class AdController extends Controller
     {
         $ad = new Ad();
         $ad->title = $request->title;
-        $ad->image = $request->image;
+        if ($request->hasFile('image')) {
+            $file = $request->image;
+            $newname = time() . $file->getCLientOriginalName();
+            $file->move("images", $newname);
+            $ad->image = "images/$newname";
+        }
         $ad->save();
-        redirect('/ad');
+        return redirect('/ad');
     }
 
     /**
@@ -78,10 +83,15 @@ class AdController extends Controller
     {
         $ad = Ad::find($id);
         $ad->title = $request->title;
-        $ad->image = $request->image;
+        if ($request->hasFile('image')) {
+            $file = $request->image;
+            $newname = time() . $file->getCLientOriginalName();
+            $file->move("images", $newname);
+            $ad->image = "images/$newname";
+        }
 
         $ad->update();
-        redirect('/ad');
+        return redirect('/ad');
     }
 
     /**

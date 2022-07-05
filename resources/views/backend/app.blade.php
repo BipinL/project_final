@@ -396,6 +396,19 @@
                 console.error(error);
             });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.select2').select2({
+                theme: 'classic',
+                placeholder: "कृपया श्रेणी चयन गर्नुहोस्"
+            });
+            $(".").select2({
+                width: 'resolve' // need to override the changed default
+            });
+
+        });
+    </script>
 </body>
 
 </html>

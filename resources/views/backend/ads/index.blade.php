@@ -16,6 +16,9 @@
                                         <div class="card">
                                             <div class="card-header">
                                                 <h4>{{ $ad->title }}</h4>
+
+                                            </div>
+                                            <div class="card-body">
                                                 <img src="{{ asset($ad->image) }}" class="img-fluid" alt="">
                                             </div>
 

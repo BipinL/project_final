@@ -14,8 +14,8 @@
                         @csrf
 
                         <div class="form-group">
-                            <label for="ad">Ads<span class="text-danger">*</span></label>
-                            <input type="text" name="ad" id="ad" class="form-control"
+                            <label for="title">Ads<span class="text-danger">*</span></label>
+                            <input type="text" name="title" id="title" class="form-control"
                                 placeholder="Enter Title">
                         </div>
 

@@ -16,19 +16,26 @@
                                         <div class="card">
                                             <div class="card-header">
                                                 <h4>{{ $post->title }}</h4>
-                                                <img src="{{ asset($post->image) }}" class="img-fluid" alt="">
                                             </div>
-                                            <div class="card-body"> {!! $post->description !!} </div>
+                                            <div class="card-body">
+                                                <img src="{{ asset($post->image) }}" class="img-fluid" alt="">
 
-                                            <form action="/post/{{ $post->id }} "method="post">
-                                                @csrf
-                                                @method('delete')
-                                                <a href="/post/{{ $post->id }}/edit " class="btn btn-info m-2">edit</a>
+                                                {{-- <p> {!! $post->description !!}</p> --}}
+
+                                            </div>
+
+                                            <div class="card-footer">
+                                                <form action="/post/{{ $post->id }} "method="post">
+                                                    @csrf
+                                                    @method('delete')
+                                                    <a href="/post/{{ $post->id }}/edit "
+                                                        class="btn btn-info m-2">edit</a>
 
 
-                                                <button type="submit" class="btn btn-danger m-2">delete</button>
+                                                    <button type="submit" class="btn btn-danger m-2">delete</button>
 
-                                            </form>
+                                                </form>
+                                            </div>
                                         </div>
                                     </div>
                                 @endforeach

@@ -23,9 +23,12 @@
                 @foreach ($posts as $item)
                     <div class="col-md-12 py-3">
                         <a href="" class="text-black">
-                            <h1> {{ $item->title }} </h1>
+                            <h1 class="display-2 fw-semi-bold"> <a href=""></a></h1>
                         </a>
-                        <img src=" {{ asset($item->image) }} " class="img-fluid" alt="">
+                        <img src=" {{ asset($item->image) }} " width="100%" alt="">
+                        <div>
+                            {!! $item->description !!}
+                        </div>
                     </div>
                 @endforeach
 
@@ -43,14 +46,13 @@
             </div>
         </div>
     </div>
-    <h1 class="text-centre fw-bold">Football</h1>
     <div class="container bg-light">
         @foreach ($posts as $post)
             <div class="row">
                 <div class="col-md-12">
                     <h1>{{ $post->title }}</h1>
                     <p> {!! $post->description !!} </p>
-                    <img src=" {{ asset($post->image) }} " alt="">
+                    <img src=" {{ asset($post->image) }}  " width="100%" alt="">
                 </div>
             </div>
         @endforeach

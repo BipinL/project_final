@@ -20,15 +20,23 @@
                         </div>
 
                         {{-- <div class="form-group">
-                            <label for="category_name"> Category <span class="text-danger">*</span></label>
+                            <label for="category_id"> Category <span class="text-danger">*</span></label>
 
-                            <select name="category_id[]" id="category_id" class="form-select form-control select2" multiple>
+                            <select name="category_id" id="category_id" class="form-select form-control select2" multiple>
                                 @foreach ($categories as $category)
-                                    <option value="{{ $category->id }}">{{ $category->category_name }}</option>
+                                    <option value="{{ $category->id }}">{{ $category->category_id }}</option>
                                 @endforeach
                             </select>
 
                         </div> --}}
+                        <div class="form-group">
+                            <label for="category_id">Category <span class="text-danger">*</span></label>
+                            <select id="category_id" class="form-select form-control" name="category_id">
+                                @foreach ($categories as $item)
+                                    <option value=" {{ $item->category_id }} "> {{ $item->category_id }} </option>
+                                @endforeach
+                            </select>
+                        </div>
 
                         <div class="form-group">
                             <label for="image">Image<span class="text-danger">*</span></label>
@@ -36,10 +44,7 @@
                                 accept="images/jpeg, images/jpg, images/png" placeholder="Enter Title">
                         </div>
 
-                        {{-- <div class="form-group">
-                            <label for="description">Description <span class="text-danger">*</span></label>
-                            <textarea name="description" id="description" rows="3"></textarea>
-                        </div> --}}
+
                         <div class="form-group">
                             <label for="description">Description <span class="text-danger">*</span></label>
                             <textarea id="description" class="form-control" name="description" rows="3"></textarea>
