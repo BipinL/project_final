@@ -19,16 +19,22 @@
                                 placeholder="Enter Title" value=" {{ $post->title }} ">
                         </div>
 
-                        {{-- <div class="form-group">
-                            <label for="category_name"> Category <span class="text-danger">*</span></label>
 
-                            <select name="category_id[]" id="category_id" class="form-select form-control select2" multiple>
-                                @foreach ($categories as $category)
-                                    <option value="{{ $category->id }}">{{ $category->category_name }}</option>
+
+
+                        <div class="form-group">
+                            <label for="category_id[]">Category <span class="text-danger">*</span></label>
+                            <select id="category_id" class="form-control" name="category_id">
+                                @foreach ($categories as $item)
+                                    <option value=" {{ $item->category_id }} "> {{ $item->category_id }} </option>
                                 @endforeach
                             </select>
-
-                        </div> --}}
+                        </div>
+                        <div class="form-group">
+                            <label for="slug">Slug name</label>
+                            <input id="slug" class="form-control" type="text" name="slug"
+                                value=" {{ $post->slug }} ">
+                        </div>
 
                         <div class="form-group">
                             <label for="image">Image<span class="text-danger">*</span></label>

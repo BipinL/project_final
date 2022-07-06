@@ -18,6 +18,11 @@
                             <input type="text" name="category_id" id="category_id" class="form-control"
                                 placeholder="Enter Category">
                         </div>
+                        <div class="form-group">
+                            <label for="slug">Slug name</label>
+                            <input id="slug" class="form-control" type="text" name="slug"
+                                placeholder="enter slug">
+                        </div>
 
                         {{-- <div class="form-group row">
                             <div class="col-md-9">

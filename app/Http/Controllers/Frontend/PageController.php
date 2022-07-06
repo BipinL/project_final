@@ -14,7 +14,7 @@ class PageController extends Controller
 
         $menus = Category::all();
         $posts = Post::orderBy('id', 'desc')->limit(3)->get();
-        $category = Category::orderBy('id', 'dec')->limit(5)->get();
+        $category = Category::orderBy('id', 'desc')->limit(5)->get();
         return view('frontend.pages.home', compact('posts', 'menus'));
     }
     public function category()

@@ -30,12 +30,17 @@
 
                         </div> --}}
                         <div class="form-group">
-                            <label for="category_id">Category <span class="text-danger">*</span></label>
+                            <label for="category_id[]">Category <span class="text-danger">*</span></label>
                             <select id="category_id" class="form-select form-control" name="category_id">
                                 @foreach ($categories as $item)
                                     <option value=" {{ $item->category_id }} "> {{ $item->category_id }} </option>
                                 @endforeach
                             </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="slug">Slug name</label>
+                            <input id="slug" class="form-control" type="text" name="slug"
+                                placeholder="entere slug">
                         </div>
 
                         <div class="form-group">
