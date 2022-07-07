@@ -18,11 +18,11 @@
                             <input type="text" name="category_id" id="category_id" class="form-control"
                                 placeholder="Enter Category" value=" {{ $category->category_id }} ">
                         </div>
-                        <div class="form-group">
+                        {{-- <div class="form-group">
                             <label for="slug">Slug name</label>
                             <input id="slug" class="form-control" type="text" name="slug"
                                 value=" {{ $category->slug }} ">
-                        </div>
+                        </div> --}}
                         {{-- <div class="form-group row">
                             <div class="col-md-9">
                                 <div class="form-check mr-sm-2">

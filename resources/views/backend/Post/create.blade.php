@@ -37,11 +37,11 @@
                                 @endforeach
                             </select>
                         </div>
-                        <div class="form-group">
+                        {{-- <div class="form-group">
                             <label for="slug">Slug name</label>
                             <input id="slug" class="form-control" type="text" name="slug"
                                 placeholder="entere slug">
-                        </div>
+                        </div> --}}
 
                         <div class="form-group">
                             <label for="image">Image<span class="text-danger">*</span></label>

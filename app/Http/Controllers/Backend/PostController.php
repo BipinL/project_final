@@ -43,7 +43,7 @@ class PostController extends Controller
         $post = new Post();
         $post->title = $request->title;
         $post->description = $request->description;
-        $post->slug = Str::slug($request->slug);
+        $post->slug = Str::slug($request->category_id);
         if ($request->hasFile('image')) {
             $file = $request->image;
             $newname = time() . $file->getCLientOriginalName();
@@ -92,7 +92,7 @@ class PostController extends Controller
         $post = Post::find($id);
         $post->title = $request->title;
         $post->description = $request->description;
-        $post->slug = Str::slug($request->slug);
+        $post->slug = Str::slug($request->category_id);
         if ($request->hasFile('image')) {
             $file = $request->image;
             $newname = time() . $file->getCLientOriginalName();

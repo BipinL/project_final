@@ -42,7 +42,7 @@ class CategoryController extends Controller
     {
         $category = new Category();
         $category->category_id = $request->category_id;
-        $category->slug = Str::slug($request->slug);
+        $category->slug = Str::slug($request->category_id);
 
         $category->save();
         return redirect('/category');
@@ -82,7 +82,7 @@ class CategoryController extends Controller
     {
         $category = Category::find($id);
         $category->category_id = $request->category_id;
-        $category->slug = Str::slug($request->slug);
+        $category->slug = Str::slug($request->category_id);
 
         $category->update();
         return redirect('/category');
